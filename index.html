@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skin Care Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.15.0"></script>
+</head>
+<body>
+
+    <h1>Skin Care Detection Web App</h1>
+
+    <div class="container">
+        <input type="file" id="imageUpload" accept="image/*">
+        <br><br>
+        <img id="preview" src="" alt="Image Preview">
+
+        <button onclick="predictSkin()">Detect Skin Condition</button>
+
+        <h2 id="result"></h2>
+        <p id="recommend"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
